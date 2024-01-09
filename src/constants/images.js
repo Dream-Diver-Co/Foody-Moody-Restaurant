@@ -20,6 +20,7 @@ import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
+import foodymoody from '../assets/foodymoody.png';
 
 const data = {
   bg,
@@ -44,5 +45,6 @@ const data = {
   sign,
   quote,
   gericht,
+  foodymoody,
 }
 export default data;
