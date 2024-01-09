@@ -35,6 +35,7 @@
 .app__chef-sign img{
     width: 250px;
     margin-top: 3rem;
+    background-color: #363333;
 }
 
 @media screen and (max-width:2000px){
