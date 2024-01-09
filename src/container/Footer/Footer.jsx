@@ -17,7 +17,7 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_logo">
-        <img src={images.gericht} alt="Meaningful description" />
+        <img src={images.foodymoody} alt="Meaningful description" />
         <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
         <div className="app__footer-links_icons">
           <FiFacebook />
@@ -36,7 +36,7 @@ const Footer = () => (
     </div>
 
     <div className="footer__copyright">
-      <p className="p__opensans">2021 Gericht. All Rights reserved.</p>
+      <p className="p__opensans">2024 Dream Diver. All Rights reserved.</p>
     </div>
 
     </div>
