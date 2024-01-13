@@ -1,7 +1,4 @@
-# Geritch Restaurant
+# Foody - Moody Restaurant
 
-This is a simple project of a restuarant which can be used for maintaining restaurants
-
-Inspired from https://ui8.net/iqonicdesign/products/gericht-restaurant-website-ui-in-figma design
-
-This project is created with React JS, CSS and HTML
+This is a react project for a restaurant, Developed by Arif Ur Rahman, instructed by Mr. M.A. Hasan.
+Dream Diver is the owner of this project.
