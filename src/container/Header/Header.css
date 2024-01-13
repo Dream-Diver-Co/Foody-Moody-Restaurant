@@ -13,4 +13,16 @@
 
 .app__header-img{
     width: 80%;
+    animation: rotate 5s linear infinite;
 }
+.app__wrapper_img{
+    animation: rotate 25s linear infinite;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
