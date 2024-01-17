@@ -22,6 +22,18 @@ import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import foodymoody from '../assets/foodymoody.png';
 
+// soloar system images from here:
+import sun from '../assets/sun.png';
+import venus from '../assets/venus.png';
+import uranus from '../assets/uranus.png';
+import saturn from '../assets/saturn.png';
+import pluto from '../assets/pluto.png';
+import neptune from '../assets/neptune.png';
+import moon from '../assets/moon.png';
+import mercury from '../assets/mercury.png';
+import mars from '../assets/mars.png';
+import jupiter from '../assets/jupiter.png';
+import earth from '../assets/earth.png';
 const data = {
   bg,
   chef,
@@ -46,5 +58,16 @@ const data = {
   quote,
   gericht,
   foodymoody,
+  sun,
+  venus,
+  uranus,
+  saturn,
+  pluto,
+  neptune,
+  moon,
+  mercury,
+  mars,
+  jupiter,
+  earth,
 }
 export default data;
