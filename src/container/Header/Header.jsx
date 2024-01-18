@@ -22,22 +22,7 @@ const Header = () => (
       <div class="neptune"></div>
       <div class="pluto"></div>
     </div>
-
-    {/* 
-    
-    
-    
-    
-    
-    
-  </div> */}
-
-    {/* <h1 className="app__header-h1">
-        The key to Fine Dining
-      </h1>
-      <p className="p__opensans" style={{ margin: "2rem 0" }}>Sit tellus lobortis sed senectus vivamus molestie.
-       Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p> */}
-  </div>
+</div>
 );
 
 export default Header;
