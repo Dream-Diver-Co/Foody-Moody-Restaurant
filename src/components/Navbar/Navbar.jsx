@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse, faAddressCard, faBars, faAward, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineRestaurantMenu } from "react-icons/md"
 import images from "../../constants/images"
@@ -17,11 +19,11 @@ const Navbar = () => {
       </div>
 
       <ul className="app__navbar-links">
-        <li className="p__opensans"><a href="#home">Home</a></li>
-        <li className="p__opensans"><a href="#about">About</a></li>
-        <li className="p__opensans"><a href="#menu">Menu</a></li>
-        <li className="p__opensans"><a href="#awards">Awards</a></li>
-        <li className="p__opensans"><a href="#contact">Contacts</a></li>
+        <li className="p__opensans"><a href="#home"><FontAwesomeIcon icon={faHouse} style={{ fontSize: '2em' }} /></a></li>
+        <li className="p__opensans"><a href="#about"><FontAwesomeIcon icon={faAddressCard} style={{ fontSize: '2em' }} /></a></li>
+        <li className="p__opensans"><a href="#menu"><FontAwesomeIcon icon={faBars} style={{ fontSize: '2em' }} /></a></li>
+        <li className="p__opensans"><a href="#awards"><FontAwesomeIcon icon={faAward} style={{ fontSize: '2em' }} /></a></li>
+        <li className="p__opensans"><a href="#contact"><FontAwesomeIcon icon={faAddressBook} style={{ fontSize: '2em' }} /></a></li>
       </ul>
 
       <div className="app__navbar-smallscreen">
