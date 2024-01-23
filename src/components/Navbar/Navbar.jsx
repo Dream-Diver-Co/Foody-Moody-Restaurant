@@ -1,15 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faAddressCard, faBars, faAward, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineRestaurantMenu } from "react-icons/md"
-import images from "../../constants/images"
+import images from "../../constants/images";
+import ReactCardFlip from 'react-card-flip';
 
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const flipTimes = {
+    home: 5000,
+    about: 3000,
+    menu: 6000,
+    awards: 4000,
+    contact: 7000,
+  };
+
+  const flipIcon = () => {
+    setIsFlipped(!isFlipped);
+
+    
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(flipIcon, 5000);
+    return () => clearInterval(intervalId);
+  }, [isFlipped]);
 
   return (
     <nav className="app__navbar">
@@ -19,11 +40,45 @@ const Navbar = () => {
       </div>
 
       <ul className="app__navbar-links">
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+          <div className='front'>
         <li className="p__opensans"><a href="#home"><FontAwesomeIcon icon={faHouse} style={{ fontSize: '2em' }} /></a></li>
+        </div>
+        <div className='Back'>
+          <h1>Home</h1></div>
+        </ReactCardFlip>
+
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+          <div className='front'>
         <li className="p__opensans"><a href="#about"><FontAwesomeIcon icon={faAddressCard} style={{ fontSize: '2em' }} /></a></li>
+        </div>
+        <div className='front Back'>
+          <h1>About Us</h1></div>
+        </ReactCardFlip>
+
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+          <div className='front'>
         <li className="p__opensans"><a href="#menu"><FontAwesomeIcon icon={faBars} style={{ fontSize: '2em' }} /></a></li>
+        </div>
+        <div className='front Back'>
+          <h1>Menu</h1></div>
+        </ReactCardFlip>
+        
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+          <div className='front'>
         <li className="p__opensans"><a href="#awards"><FontAwesomeIcon icon={faAward} style={{ fontSize: '2em' }} /></a></li>
+        </div>
+        <div className='front Back'>
+          <h1>Awards</h1></div>
+        </ReactCardFlip>
+        
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+          <div className='front'>
         <li className="p__opensans"><a href="#contact"><FontAwesomeIcon icon={faAddressBook} style={{ fontSize: '2em' }} /></a></li>
+        </div>
+        <div className='front Back'>
+          <h1>Contact</h1></div>
+        </ReactCardFlip>
       </ul>
 
       <div className="app__navbar-smallscreen">

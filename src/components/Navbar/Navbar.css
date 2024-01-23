@@ -32,6 +32,11 @@
     color: var(--color-grey)
 }
 
+.Back{
+    color: white;
+    margin: 5px;
+}
+
 .app__navbar-login{
     display: flex;
     justify-content: flex-end;
