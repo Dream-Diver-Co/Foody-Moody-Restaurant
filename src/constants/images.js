@@ -34,6 +34,7 @@ import mercury from '../assets/mercury.png';
 import mars from '../assets/mars.png';
 import jupiter from '../assets/jupiter.png';
 import earth from '../assets/earth.png';
+import foody_moody_logo from '../assets/foody_moody_logo.png';
 const data = {
   bg,
   chef,
@@ -69,5 +70,6 @@ const data = {
   mars,
   jupiter,
   earth,
+  foody_moody_logo,
 }
 export default data;

@@ -10,7 +10,7 @@ const Header = () => (
     <div className="container">
       <div className="sun">
       
-        <img src={images.sun} alt="sun" />
+        <img src={images.foody_moody_logo} alt="sun" />
       </div>
       {/* <div class="mercury"></div>
       <div class="venus"></div>
