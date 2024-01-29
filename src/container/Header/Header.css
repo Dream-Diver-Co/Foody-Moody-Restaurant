@@ -11,96 +11,161 @@
     font-size: 90px;
 }
 
+.app__header-img{
+    width: 80%;
+}
+.app__wrapper {
+    position: relative;
+    height: 750px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
 
+
+.container {
+    font-size: 6px;
+    width: 60em; /* Adjust the width as needed */
+    height: 60em; /* Adjust the height as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  img{
+    height: 200%;
+    width: 200%;
+}
+  
   .sun {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 20em;
-    left: 38em;
-    width: 5em;
-    height: 5em;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
     box-shadow: 0 0 3em rgb(255, 128, 0);
-    /* animation: orbit 50s linear infinite; */
-}
-.sun img {
-    height: 170px;
-    width: 170px;
-}
+  }
+
+.earth,
+.jupiter,
+.saturn,
 .uranus,
 .neptune,
 .pluto {
     position: absolute;
-    /* border-style: solid;
+    border-style: solid;
     border-color: rgb(212, 103, 103) transparent transparent transparent;
     border-width: 0.1em 0.1em 0 0;
-    border-radius: 50%; */
+    border-radius: 50%;
+}
+.earth {
+    top: -15em;
+    left: -15em;
+    width: 70em;
+    height: 70em; 
+    animation: orbit 24s linear infinite;
+    animation-delay: 20s;
+}
+.jupiter {
+    top: -15em;
+    left: -15em;
+    width: 70em;
+    height: 70em; 
+    animation: orbit 24s linear infinite;
+    animation-delay: 12s;
+}
+.saturn {
+    top: -15em;
+    left: -15em;
+    width: 70em;
+    height: 70em;
+    animation: orbit 24s linear infinite;
+    animation-delay: 4s;
 }
 .uranus {
-    top: 10em;
-    left: 25em;
-    width: 30em;
-    height: 30em; 
-    animation: orbit 120s linear infinite;
+    top: -30em;
+    left: -30em;
+    width: 100em;
+    height: 100em; 
+    animation: orbit 24s linear infinite;
+    animation-delay: 16s;
 }
 .neptune {
-    top: 4em;
-    left: 25em;
-    width: 30em;
-    height: 30em; 
-    animation: orbit 100s linear infinite;
+    top: -30em;
+    left: -30em;
+    width: 100em;
+    height: 100em; 
+    animation: orbit 24s linear infinite;
+    animation-delay: 8s;
 }
 .pluto {
-    top: 8em;
-    left: 25em;
-    width: 30em;
-    height: 30em; 
-    animation: orbit 110s linear infinite;
+    top: -30em;
+    left: -30em;
+    width: 100em;
+    height: 100em; 
+    animation: orbit 24s linear infinite;
 }
+
+.earth::before,
+.jupiter::before,
+.saturn::before,
 .uranus::before,
 .neptune::before,
 .pluto::before{
     content: '';
     position: absolute;
     border-radius: 50%;
-    animation: orbit 30s linear infinite;
+    animation: orbit 60s linear infinite;
 }
-
-.uranus-link {
-    display: block; /* Ensure the link takes up the full space of the container */
+.earth::before {
+    top: 10em;
+    right: 10em;
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/findus.png');
+    background-size: cover;
+}
+.jupiter::before {
+    top: 10em;
+    right: 10em;
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/food4.png');
+    background-size: cover;
+}
+.saturn::before {
+    top: 10em;
+    right: 10em;
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/food5.png');
+    background-size: cover;
 }
 .uranus::before {
-    top: 25em;
-    right: 6.5em;
-    width: 8em;
-    height: 8em;
-    background-image: url('../../assets/welcome.png');
+    top: 10em;
+    right: 10em;
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/Japanese.png');
     background-size: cover;
 }
 .neptune::before {
-    top: 23em;
-    right: 8em;
-    width: 8em;
-    height: 8em;
-    background-image: url('../../assets/food5.png');
+    top: 10em;
+    right: 10em;
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/salad.png');
     background-size: cover;
 }
 .pluto::before {
-    top: 26em;
+    top: 10em;
     right: 10em;
-    width: 8em;
-    height: 8em;
-    background-image: url('../../assets/laurels.png');
+    width: 20em;
+    height: 20em;
+    background-image: url('./images/Japanese.png');
     background-size: cover;
-}
-
-.star {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    z-index: -1;
 }
 
 @keyframes orbit {
