@@ -7,6 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineRestaurantMenu } from "react-icons/md"
 import images from "../../constants/images";
 import ReactCardFlip from 'react-card-flip';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -34,6 +35,7 @@ const Navbar = () => {
 
   return (
     <nav className="app__navbar">
+
       <div className="app__navbar-logo">
         <img src={images.foodymoody} alt="app__logo" />
         
@@ -49,6 +51,7 @@ const Navbar = () => {
         </ReactCardFlip>
 
         <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+            
           <div className='front'>
         <li className="p__opensans"><a href="#about"><FontAwesomeIcon icon={faAddressCard} style={{ fontSize: '2em' }} /></a></li>
         </div>
